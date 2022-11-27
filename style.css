@@ -13,6 +13,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
     position: relative;
     /* background:linear-gradient(90deg, #5789D2,  #A39FFF ); */
+    
     background:#000123;
     /* font-size: 3rem; */
 
@@ -209,7 +210,19 @@ color: #5628D2;
 .foot > img{
     margin-left: .5rem;
 }
+.top{
+    position: absolute;
+    z-index: -10;
+ animation: wave 10s linear 10ms 15 alternate fill-mode both;
+    overflow: hidden;
+}
+@keyframes wave {
+    from{
+        transform: translate3d(-100px, 100px, -100px);
 
+    }
+    
+}
 
 @media (min-width:40em) {
     h1{
@@ -261,6 +274,7 @@ color: #5628D2;
         top: 70%;
         left:  12%;
     }
+    
 
     
 }
